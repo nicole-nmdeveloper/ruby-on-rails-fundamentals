@@ -29,6 +29,10 @@
     <%= render 'home/header' %>
 
     <div class="container mt-4">
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
+
       <%= yield %>
     </div>
 
