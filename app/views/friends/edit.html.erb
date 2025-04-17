@@ -12,3 +12,7 @@
   <%= link_to "Show this friend", @friend %> |
   <%= link_to "Back to friends", friends_path %>
 </div>
+
+<div>
+  <%= link_to "Delete", friend_path(@friend.id), method: :delete, data: { confirm: 'Are you sure?' }, class: "link link-danger" %>
+</div>
